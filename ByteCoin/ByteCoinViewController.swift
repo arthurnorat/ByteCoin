@@ -7,7 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ByteCoinViewController: UIViewController {
+	
+	var byteCoinView: ByteCoinView?
+	
+	override func loadView() {
+		byteCoinView = ByteCoinView()
+		view = byteCoinView
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
